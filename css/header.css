@@ -1,0 +1,205 @@
+@media (min-width: 320px) {
+
+    .logo-link {
+        width: 60px;
+        height: 60px;
+        display: block;
+    }
+
+    nav {
+        width: 320px;
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+    }
+
+    .nav-list {
+        display: block;
+        position: absolute;
+        width: 320px;
+        top: 60px;
+        overflow: hidden;
+        transition: 0.5s all;
+        z-index: 4;
+        max-height: 0;
+        font-size: 0;
+
+    }
+
+    .nav-link {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+
+    .nav-label {
+        width: 250px;
+        height: 60px;
+        margin-left: auto;
+        padding-left: 40px;
+    }
+
+    .nav-label p {
+        text-transform: uppercase;
+        text-align: center;
+        padding-right: 92px;
+    }
+
+    #nav-menu {
+        display: none;
+    }
+
+    .burger-line {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+        transition: 0.2s all;
+    }
+
+    .burger-line-seconde,
+    .burger-line-thirth {
+        top: 25px;
+    }
+
+    .burger-line-fourth {
+        top: 35px;
+    }
+
+    #nav-menu:checked ~ .nav-list {
+        max-height: 500px;
+        font-size: 18px;
+    }
+
+    #nav-menu:checked ~ .burger-line-first,
+    #nav-menu:checked ~ .burger-line-fourth {
+        display: none;
+    }
+
+    #nav-menu:checked ~ .burger-line-seconde {
+        transform: rotate(45deg);
+    }
+
+    #nav-menu:checked ~ .burger-line-thirth {
+        transform: rotate(-45deg);
+    }
+
+    .header-gallery {
+        width: 320px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .header-gallery__title {
+        position: absolute;
+        bottom: 121px;
+        left: 50px;
+        color: white;
+        font-size: 29px;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    .header-gallery__img {
+        display: block;
+        width: 320px;
+        position: relative;
+    }
+
+    .mini-list {
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 126px;
+        left: 52px;
+        color: white;
+    }
+
+    .mini-list li {
+        padding-left: 7px;
+    }
+
+    .about {
+        width: 320px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .about__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    .slider {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .slider__slide {
+        display: none;
+    }
+
+    .slider__slide--active {
+        display: flex;
+        height: 160px;
+        justify-content: center;
+    }
+
+    .slider__img{
+        width: 125px;
+        height: 125px;
+    }
+    .slide__paragraph{
+        width: 180px;
+    }
+
+    #slider__btn--prev{
+        display: block;
+        width: 76px;
+        height: 67px;
+        position: absolute;
+        left: 0;
+        bottom: -65px;
+        border: none;
+        background-color: transparent;
+    }
+    #slider__btn--next{
+        display: block;
+        width: 76px;
+        height: 67px;
+        position: absolute;
+        right: 0;
+        bottom: -65px;
+        border: none;
+        background-color: transparent;
+        background-position: center;
+    }
+    #slider__btn--prev img{
+        transform: scale(-1, 1);
+    }
+    .skills {
+        width: 320px;
+        margin: 0 auto;
+        margin-top: 145px;
+    }
+
+    .skills h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+
+
+
+}
