@@ -113,6 +113,7 @@
         display: block;
         width: 320px;
         position: relative;
+
     }
 
     .mini-list {
@@ -135,7 +136,8 @@
         position: relative;
         border: 1px dotted black;
     }
-    .about__paragraph{
+
+    .about__paragraph {
         text-align: center;
         padding-bottom: 35px;
         padding-top: 15px;
@@ -163,19 +165,20 @@
         align-items: center;
     }
 
-    .slider__img{
+    .slider__img {
         width: 125px;
         height: 125px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .slide__paragraph{
+
+    .slide__paragraph {
         width: 180px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    #slider__btn--prev{
+    #slider__btn--prev {
         display: block;
         width: 76px;
         height: 67px;
@@ -186,7 +189,8 @@
         background-color: transparent;
         border: 1px dotted black;
     }
-    #slider__btn--next{
+
+    #slider__btn--next {
         display: block;
         width: 76px;
         height: 67px;
@@ -198,17 +202,67 @@
         background-position: center;
         border: 1px dotted black;
     }
-    #slider__btn--next img{
+
+    #slider__btn--next img {
         width: 45px;
     }
-    #slider__btn--prev img{
+
+    #slider__btn--prev img {
         transform: scale(-1, 1);
         width: 45px;
     }
+
+    .shop {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .shop__title {
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 200;
+        padding-top: 15px;
+    }
+
+    .shop__paragraph {
+        text-align: center;
+        line-height: 28px;
+        border: 1px dotted black;
+    }
+
+    .shop-list {
+        width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .shop-list__item {
+        text-align: center;
+        line-height: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        margin-bottom: 10px;
+        border: 1px dotted black;
+    }
+
+    .shop-list__link{
+        color: black;
+    }
+
+    .shop-list__title-sub {
+        text-transform: uppercase;
+        font-weight: 200;
+        line-height: 30px;
+    }
+
     .skills {
         width: 320px;
         margin: 0 auto;
-        margin-top: 145px;
+        margin-top: 120px;
     }
 
     .skills h2 {
@@ -216,20 +270,23 @@
         text-transform: uppercase;
         font-weight: 200;
     }
-    .skills-list__item{
-        padding-top: 15px;
+
+    .skills-list__item {
+        padding-top: 30px;
         position: relative;
     }
 
-    .skills-list__img{
+    .skills-list__img {
         width: 258px;
         height: 320px;
         display: block;
         margin: 0 auto;
         border: 1px dotted black;
+        /*background: linear-gradient(rgba(0,0,0,0.5), black);*/
+
     }
 
-    .skills-list__title{
+    .skills-list__title {
         position: absolute;
         left: 10px;
         bottom: 131px;
@@ -238,5 +295,185 @@
         text-transform: uppercase;
     }
 
+    .skills-list__paragraph {
+        position: absolute;
+        bottom: 84px;
+        left: 15px;
+    }
 
+    .skills-list__btn {
+        display: block;
+        width: 75px;
+        position: absolute;
+        right: 10px;
+        bottom: 25px;
+        border: 1px dotted black;
+        text-align: center;
+        padding: 10px 25px;
+        font-size: 21px;
+        color: black;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+        cursor: pointer;
+        user-select: none;
+
+    }
+
+    .skills-list__btn:before, .skills-list__btn:after {
+        content: '';
+        position: absolute;
+        transition: inherit;
+        z-index: -1;
+    }
+
+    .skills-list__btn:hover {
+        color: white;
+        transition-delay: .5s;
+    }
+
+    .skills-list__btn:hover:before {
+        transition-delay: 0s;
+    }
+
+    .skills-list__btn:hover:after {
+        background: black;
+        transition-delay: .35s;
+    }
+
+    .skills-list__btn:before {
+        top: 0;
+        left: 50%;
+        height: 100%;
+        width: 0;
+        border: 1px solid black;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .skills-list__btn:after {
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: 100%;
+        background: black;
+    }
+
+    .skills-list__btn:hover:before {
+        left: 0;
+        width: 100%;
+    }
+
+    .skills-list__btn:hover:after {
+        top: 0;
+        height: 100%;
+    }
+
+
+    .shop {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .shop-list__title-sub{
+        text-align: center;
+    }
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+    #shop__btn{
+        width: 130px;
+        height: 65px;
+        margin: 15px auto;
+        color: black;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.15rem;
+        line-height: 65px;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    #shop__btn svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #shop__btn svg rect{
+        fill: none;
+        stroke: black;
+        stroke-width: 1;
+        stroke-dasharray: 400, 0;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+
+    }
+
+    #shop__btn:hover svg rect {
+        stroke-width: 3;
+        stroke-dasharray: 35, 245;
+        stroke-dashoffset: 38;
+        -webkit-transition: all 0.8s ease-in-out;
+        -moz-transition: all 0.8s ease-in-out;
+        -ms-transition: all 0.8s ease-in-out;
+        -o-transition: all 0.8s ease-in-out;
+    }
+
+    #shop__btn:hover svg rect{
+        stroke: black;
+    }
+    .contacts {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .form-wrapper {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .input-group {
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    input, textarea {
+        width: 250px;
+        line-height: 25px;
+        outline: 0;
+        border: 1px solid black;
+        color: black;
+        background: transparent;
+        font-size: 16px;
+    }
+
+    label {
+        height: 100%;
+        padding: 10px;
+        color: black;
+        cursor: text;
+        transition: 0.2s;
+    }
+
+    #btn-submit {
+        padding: 10px 0;
+        color: black;
+        outline: none;
+        background: transparent;
+        border: 1px solid black;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .contacts{
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
